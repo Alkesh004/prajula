@@ -6,12 +6,16 @@
   padding: 0;
 }
 
+.gray-tint {
+  color: #D9D9D9;
+}
+
 #TopMainStrip {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 100;
+  z-index: 50;
   -webkit-box-shadow: 0px 0px 4px 0px #0000005e;
           box-shadow: 0px 0px 4px 0px #0000005e;
 }
@@ -19,7 +23,11 @@
 .sm-txt {
   font-size: 18px;
   font-family: "Heebo", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
+}
+
+.md-txt {
+  font-size: 30px;
 }
 
 .section-gap {
@@ -110,6 +118,18 @@ a {
 .btn-main.two:hover::before {
   width: 100%;
   background-color: #000000;
+}
+
+.btn-two {
+  background-color: #ffffff;
+  width: 220px;
+  padding: 6px 12px;
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+
+.btn-two i {
+  font-size: 20px;
 }
 
 .bullet-point-content {
@@ -209,6 +229,39 @@ a {
   height: 32px;
   display: table-cell;
   vertical-align: middle;
+  cursor: pointer;
+}
+
+#SideMenu {
+  position: fixed;
+  background-color: #00000079;
+  height: 100%;
+  width: 100%;
+  z-index: 60;
+  display: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#SideMenu #SideNav {
+  width: 0px;
+  height: 100vh;
+  background-color: #212121;
+  right: 0;
+  margin-left: auto;
+  position: relative;
+  z-index: 2;
+  padding: 10px 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#SideMenu #SideNav .close-btn i {
+  font-size: 30px;
+}
+
+#SideMenu #SideNav .side-main-content {
+  padding: 30px 20px;
 }
 
 #HeroSec .bg {
@@ -221,7 +274,6 @@ a {
 }
 
 #HeroSec .bg .content {
-  padding: 0 4%;
   width: 100%;
 }
 

@@ -71,22 +71,22 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Products</a>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Facility</a>
+                            <a class="nav-link" href="our-services.html">Services</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="our-products.html">Products</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
-                        <li class="nav-item">
-                            <div class="side-bar-img-box">
+                        <li class="nav-item" id="menubtn">
+                            <div class="side-bar-img-box" onclick="openNav()">
                                 <img class="img-fluid" src="assets/images/right-side-bar.svg">
                             </div>
                         </li>
@@ -96,24 +96,63 @@
         </nav>
     </section>
 
-    <section id="HeroSec">
-        <div class="bg sec-h" style="background-image: url(assets/images/h-bg.jpg); height: 40vh;">
-            <div class="content d-flex justify-content-between">
-                <p class="sm-sec-h text-left text-capitalize text-white">Our Products</p>
-                <div class="sm-txt text-capitalize font-mukta mt-5 spl-link"><a href="index.html"><span class="text-white">Home</span></a> - Our Products</div>
+    <!-- Side Menu Start -->
+
+    <section id="SideMenu">
+        <div class="side-menu-main" id="SideNav">
+
+            <a href="javascript:void(0)" onclick="closeNav()">
+                <div class="close-btn d-flex justify-content-end">
+                    <i class="bi bi-x-circle text-white"></i>
+                </div>
+            </a>
+
+            <div class="side-main-content">
+                <div class="right-logo">
+                    <a class="navbar-brand" href="index.html"><img class="img-fluid"
+                            src="assets/images/Prajula-logo.svg"></a>
+                </div>
+
+                <p class="sm-txt gray-tint">Demoralized by the charms of pleasure of the moment so blinded by desire
+                    that
+                    they cannot foresees
+                    the pain.</p>
+
+                <p class="md-txt text-white bold">Our Brochure</p>
+
+                <a href="assets/docs/dummy.pdf" download>
+                    <button class="btn-two bold d-flex align-items-center"><i
+                            class="bi bi-file-earmark-pdf mr-1"></i></i> Service Details.pdf</button>
+                </a>
+                <a href="assets/docs/dummy.pdf" download>
+                    <button class="btn-two bold d-flex align-items-center"><i
+                            class="bi bi-file-earmark-pdf mr-1"></i></i> products brochure.pdf</button>
+                </a>
             </div>
+
+        </div>
+
+
         </div>
     </section>
 
+    <!-- Side Menu End -->
 
-
-
-
-
+    <section id="HeroSec">
+        <div class="bg sec-h" style="background-image: url(assets/images/h-bg.jpg); height: 40vh;">
+            <div class="container">
+                <div class="content d-flex justify-content-between">
+                    <p class="sm-sec-h text-left text-capitalize text-white">Our Products</p>
+                    <div class="sm-txt text-capitalize font-mukta mt-5 spl-link"><a href="index.html"><span
+                                class="text-white">Home</span></a> - Our Products</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="ServicesSection" class="section-gap ManuFactureSec mb-5">
 
-        <div class="container">            
+        <div class="container">
             <div class="owl-carousel menufectureCaro owl-theme">
                 <div class="item">
                     <div class="service-box-main">
@@ -177,7 +216,7 @@
                             <div class="arrow-box">
                                 <i class="bi bi-arrow-right-short"></i>
                             </div>
-                            
+
                         </div>
 
                     </div>
@@ -247,7 +286,7 @@
                             <div class="arrow-box">
                                 <i class="bi bi-arrow-right-short"></i>
                             </div>
-                            
+
                         </div>
 
                     </div>
@@ -319,17 +358,14 @@
                             <div class="arrow-box">
                                 <i class="bi bi-arrow-right-short"></i>
                             </div>
-                            
+
                         </div>
 
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
-
-
 
     <!-- our partners start -->
 
@@ -416,7 +452,7 @@
                             <li class="f-icon">
                                 <i class="bi bi-telephone-fill mr-2"></i>
                                 <a class="link" href="">
-                                    079 1245 3566
+                                    079 1245 3566 <br>
                                     +91 1234 5678 0
                                 </a>
                             </li>
@@ -463,6 +499,16 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
+    <script>
+        function openNav() {
+            document.getElementById("SideMenu").style.display = "block";
+            document.getElementById("SideNav").style.width = "400px";
+        }
+        function closeNav() {
+            document.getElementById("SideMenu").style.display = "none";
+            document.getElementById("SideNav").style.width = "0px";
+        }
+    </script>
 
 
     <script>
