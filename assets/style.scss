@@ -22,9 +22,10 @@ $Roboto: 'Roboto', sans-serif;
     color: #D9D9D9;
 }
 
-.gray-shade{
+.gray-shade {
     color: #4B4B4B;
 }
+
 // common scss start
 
 #TopMainStrip {
@@ -55,16 +56,17 @@ $Roboto: 'Roboto', sans-serif;
     font-weight: 500;
 }
 
-.semi-bold{
+.semi-bold {
     font-weight: 400;
 }
+
 .sec-h {
     font-family: $Heebo;
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
     text-transform: uppercase;
-    color: $dark-yellow !important;
+    color: $dark-yellow  !important;
 }
 
 .sm-sec-h {
@@ -265,7 +267,6 @@ a {
         position: relative;
         z-index: 2;
         padding: 10px 20px;
-        transition: 1s;
 
         .close-btn {
             i {
@@ -293,6 +294,7 @@ a {
 
             .spl-link {
                 color: $dark-yellow;
+
                 a {
                     span {
                         &:hover {
@@ -318,6 +320,38 @@ a {
 // hero section end
 
 // about section start
+
+#AboutCompany {
+    width: 100%;
+    height: auto;
+
+    .img-box {
+        width: 100%;
+        height: 400px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .content-left {
+        background-color: $white;
+        padding: 20px;
+        margin-top: 40px;
+        border-top: 3px solid $dark-yellow;
+        box-shadow: 0px 0px 19px 1px #DBAC3724;
+    }
+
+    .content-right {
+        margin-top: 40px;
+
+        .sm-txt {
+            font-weight: 400;
+        }
+    }
+}
 
 #AboutBrief {
     .left-sec {
@@ -404,20 +438,70 @@ a {
     }
 }
 
+
+
+#MissionVisionStrip {
+    .main-box {
+
+        .img-box {
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 290px;
+            display: grid;
+            place-items: center;
+            padding: 40px;
+            position: relative;
+        }
+
+        .icon-yellow-circle {
+            position: absolute;
+            top: -30px;
+            left: 32px;
+            width: 60px;
+            height: 60px;
+            border-radius: 40px;
+            background-color: $dark-yellow;
+            z-index: 4;
+            display: grid;
+            place-items: center;
+
+            .icon-white-circle {
+                padding: 14px;
+                border-radius: 40px;
+                background-color: $white;
+                margin-top: 3px;
+                margin-left: 3px;
+                transition: .4s ease-in;
+            }
+        }
+
+         &:hover{
+            .icon-yellow-circle {
+                .icon-white-circle {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
 // Services Section Start
 
 #ServicesSection {
 
-    .key-points-main{
+    .key-points-main {
         margin: 0 100px;
-        .key-points{
-            .sm-txt{
+
+        .key-points {
+            .sm-txt {
                 font-size: 24px;
                 font-weight: 400;
                 color: $black;
                 margin-left: 10px;
             }
-            .content-strip{
+
+            .content-strip {
                 display: flex;
                 align-items: center;
             }
@@ -453,7 +537,7 @@ a {
         }
 
 
-       
+
 
 
 
@@ -632,13 +716,13 @@ a {
         }
     }
 
-    .star-strip{
-        i{
+    .star-strip {
+        i {
             font-size: 26px;
             color: #DBAC37;
             margin-left: 10PX;
 
-            &:last-child{
+            &:last-child {
                 color: $white;
             }
         }
@@ -704,13 +788,13 @@ a {
             box-shadow: 0px 0px 19px 1px #DBAC3724;
             padding: 10px 16px;
 
-            img{
+            img {
                 width: 50px;
                 height: 50px;
             }
 
-            .sm-txt{
-                a{
+            .sm-txt {
+                a {
                     color: #4B4B4B;
                 }
             }
