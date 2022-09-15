@@ -28,6 +28,7 @@
   font-size: 18px;
   font-family: "Heebo", sans-serif;
   font-weight: 300;
+  color: #4B4B4B;
 }
 
 .md-txt {
@@ -385,6 +386,26 @@ a {
   font-weight: 500;
 }
 
+#ServicesSection .key-points-main {
+  margin: 0 100px;
+}
+
+#ServicesSection .key-points-main .key-points .sm-txt {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+  margin-left: 10px;
+}
+
+#ServicesSection .key-points-main .key-points .content-strip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #ServicesSection .service-box-main {
   width: 350px;
   height: 410px;
@@ -508,6 +529,7 @@ a {
 
 #ServicesSection .service-box-main .content-box .arrow-box i {
   font-size: 20px;
+  color: #ffffff;
 }
 
 #ServicesSection.ManuFactureSec .service-box-main {
@@ -591,6 +613,16 @@ a {
 #CoreValues .card-row .card-box.shadow {
   -webkit-box-shadow: -2px 0px 14px 0px #00000040;
           box-shadow: -2px 0px 14px 0px #00000040;
+}
+
+#CoreValues .star-strip i {
+  font-size: 26px;
+  color: #DBAC37;
+  margin-left: 10PX;
+}
+
+#CoreValues .star-strip i:last-child {
+  color: #ffffff;
 }
 
 #Facts {
