@@ -53,7 +53,7 @@
   font-weight: 500;
   line-height: 26px;
   text-transform: uppercase;
-  color: #DBAC37;
+  color: #DBAC37 !important;
 }
 
 .sm-sec-h {
@@ -284,6 +284,10 @@ a {
 
 #HeroSec .bg .content {
   width: 100%;
+}
+
+#HeroSec .bg .content .spl-link {
+  color: #DBAC37;
 }
 
 #HeroSec .bg .content .spl-link a span:hover {
@@ -680,6 +684,10 @@ a {
 #ContactUs .call-and-mail .call-quick img {
   width: 50px;
   height: 50px;
+}
+
+#ContactUs .call-and-mail .call-quick .sm-txt a {
+  color: #4B4B4B;
 }
 
 #ContactUs .contact-form .form-field {
