@@ -26,6 +26,10 @@ $Roboto: 'Roboto', sans-serif;
     color: #4B4B4B;
 }
 
+.blk-color {
+    color: #000000 !important;
+}
+
 // common scss start
 
 #TopMainStrip {
@@ -476,7 +480,7 @@ a {
             }
         }
 
-         &:hover{
+        &:hover {
             .icon-yellow-circle {
                 .icon-white-circle {
                     background-color: transparent;
@@ -670,6 +674,76 @@ a {
 }
 
 // Services Section End
+
+#HistoryTimeline {
+    .timeline-main {
+        width: 100%;
+        position: relative;
+        .year-main-point{
+            .timeline-caro{
+                .owl-nav{
+                    position: absolute;
+                    top: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    button{
+                        width: 40px;
+                        height: 40px;
+                        font-size: 26px;
+                        background-color: transparent;
+                        border: 1px solid $gray;
+                        color: $gray;
+                        display: grid;
+                        place-items: center ;
+                        background-color: $white;
+                        span{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .strip-line {
+            width: 100%;
+            position: absolute;
+            bottom: -6px;
+            z-index: -1;
+            border-color: $gray;
+        }
+
+        .year-point {
+            width: 60px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 auto;
+
+            .sm-txt {
+                color: #212121;
+            }
+
+            img{
+                width: 20px;
+            }
+        }
+    }
+
+    .img-content-caro{
+        margin-top: 80px;
+        .img-box{
+            height: 400px;
+            img{
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+
 
 // core values start
 
