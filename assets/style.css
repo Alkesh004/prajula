@@ -943,6 +943,10 @@ a {
   padding: 80px 0;
 }
 
+#FooterMain .link-main {
+  padding-left: 55px;
+}
+
 #FooterMain .link-main .sm-h {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
@@ -1025,5 +1029,111 @@ a {
 
 #FooterMain .social-icons .icon-box:hover {
   background-color: #DBAC37;
+}
+
+#HighlightsBenefits .main {
+  margin-top: 50px;
+}
+
+#HighlightsBenefits .highlight-box {
+  padding: 10px 30px;
+}
+
+#HighlightsBenefits .highlight-box .icon-box {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+}
+
+#HighlightsBenefits .highlight-box .icon-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#HighlightsBenefits .highlight-box .md-txt {
+  font-size: 22px;
+}
+
+@media (max-width: 576px) {
+  .section-gap {
+    margin-top: 50px;
+  }
+  .sm-sec-h {
+    font-size: 30px;
+  }
+  .top-cont-strip .first-half {
+    padding: 9px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .top-cont-strip .first-half .phone {
+    margin-right: 15px;
+  }
+  .top-cont-strip .first-half .bi-dash-lg {
+    display: none;
+  }
+  .top-cont-strip .second-half {
+    padding: 4px;
+    text-align: center;
+  }
+  .top-cont-strip .quick-btn {
+    width: 40%;
+  }
+  #HeroSec .bg .hero-heading {
+    font-size: 30PX;
+  }
+  #HeroSec .bg .content {
+    margin-top: 20%;
+    padding: 0 20px;
+  }
+  #AboutBrief .left-sec .img-box {
+    height: 276px;
+  }
+  #AboutBrief .left-sec .strip-box .circle-img {
+    width: 110px;
+    height: 70px;
+  }
+  #AboutBrief .left-sec .strip-box .sm-txt {
+    font-size: 18px;
+    padding-left: 10px;
+    margin-left: 0;
+  }
+  #AboutBrief .right-sec {
+    margin-top: 30px;
+  }
+  #ServicesSection .service-box-main {
+    margin-top: 26px;
+  }
+  #ServicesSection .menufectureCaro .owl-nav {
+    display: none;
+  }
+  #CoreValues {
+    height: 80vh !important;
+  }
+  #CoreValues .card-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #CoreValues .card-row .card-box {
+    width: 350px;
+  }
+  #CoreValues .card-row .card-box .content .md-txt {
+    font-size: 18px;
+  }
+  #CoreValues .card-row .card-box .content .sm-txt {
+    font-size: 15px;
+  }
+  #Facts {
+    height: 100vh !important;
+  }
+  #ContactUs .half .btn-main {
+    margin-bottom: 30px !important;
+  }
+  #FooterMain .link-main {
+    padding-left: 0px;
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
