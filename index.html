@@ -104,7 +104,7 @@
 
     <section id="SideMenu">
         <div class="side-menu-main" id="SideNav">
-            <a  href="javascript:void(0)" onclick="closeNav()">
+            <a href="javascript:void(0)" onclick="closeNav()">
                 <div class="close-btn d-flex justify-content-end">
                     <i class="bi bi-x-circle text-white"></i>
                 </div>
@@ -513,7 +513,7 @@
 
                         <div class="contact-form mt-3">
                             <div class="row ">
-                                
+
                                 <div class="form-field col-sm-6">
                                     <input id="Fname" class="input-text" type="text" name="">
                                     <label for="Fname" class="label">First Name*</label>
@@ -581,7 +581,7 @@
                                 <label for="email" class="label">email*</label>
                             </div>
                         </div>
-                        <button class="btn btn-main two mt-3">Send</button>
+                        <button class="btn btn-main two border-0 mt-3">Send</button>
                     </div>
                 </div>
 
@@ -594,18 +594,38 @@
 
     <!-- our partners start -->
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <div class="partners-main">
+    <div class="partners-main container">
+        <div class="owl-carousel owl-theme partners-logo-carousel">
+
+            <div class="item">
+                <div class="img-box">
                     <img class="img-fluid" src="assets/images/client's-logo-one.svg">
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img-box">
                     <img class="img-fluid" src="assets/images/client's-logo-two.svg">
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img-box">
                     <img class="img-fluid" src="assets/images/client's-logo-three.svg">
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img-box">
                     <img class="img-fluid" src="assets/images/client's-logo-four.svg">
                 </div>
             </div>
+
         </div>
+
     </div>
+
+
 
     <!-- our partners end -->
 
@@ -753,9 +773,6 @@
         })
     </script>
 
-
-
-
     <script>
         $('.serv-carousel').owlCarousel({
             loop: true,
@@ -772,6 +789,27 @@
                 },
                 1000: {
                     items: 3
+                }
+            }
+        })
+    </script>
+
+
+    <script>
+        $('.partners-logo-carousel').owlCarousel({
+            loop: false,
+            nav: false,
+            // navClass: ['bi bi-chevron-left', 'bi bi-chevron-right'],
+            dots: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
                 }
             }
         })

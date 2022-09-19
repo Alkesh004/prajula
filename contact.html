@@ -173,8 +173,10 @@
                     <div class="call-and-mail d-flex flex-wrap my-4">
                         <div class="call-quick d-flex">
                             <img class="img-fluid" src="assets/images/call-icon.png">
-                            <p class="sm-txt mb-0 ml-2" style="font-weight: 400;"><a href="tel:079 1245 3566">079 1245 3566</a><br>
-                                <a href="tel:+91 1234 5678 0">+91 1234 5678 0</a></p>
+                            <p class="sm-txt mb-0 ml-2" style="font-weight: 400;"><a href="tel:079 1245 3566">079 1245
+                                    3566</a><br>
+                                <a href="tel:+91 1234 5678 0">+91 1234 5678 0</a>
+                            </p>
                         </div>
 
                         <div class="call-quick d-flex align-items-center ml-5">
@@ -236,7 +238,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 right-half">
-                    <div class="half" style="background-image:url(assets/images/pngwing.png); background-size: cover; height: 35%;">
+                    <div class="half"
+                        style="background-image:url(assets/images/pngwing.png); background-size: cover; height: 35%;">
                         <img class="img-fluid" src="assets/images/brochure.svg">
                         <div class="my-4">
                             <p class="md-txt my-2">download brochure</p>
@@ -270,25 +273,38 @@
     <!-- Contact Us end -->
 
 
-
-
-
-
     <!-- our partners start -->
 
-    <div class="container" style="margin-top: 100px;">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <div class="partners-main">
+    <div class="partners-main container">
+        <div class="owl-carousel owl-theme partners-logo-carousel">
+
+            <div class="item">
+                <div class="img-box">
                     <img class="img-fluid" src="assets/images/client's-logo-one.svg">
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img-box">
                     <img class="img-fluid" src="assets/images/client's-logo-two.svg">
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img-box">
                     <img class="img-fluid" src="assets/images/client's-logo-three.svg">
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img-box">
                     <img class="img-fluid" src="assets/images/client's-logo-four.svg">
                 </div>
             </div>
-        </div>
-    </div>
 
+        </div>
+
+    </div>
     <!-- our partners end -->
 
 
@@ -457,6 +473,27 @@
                 },
                 1000: {
                     items: 3
+                }
+            }
+        })
+    </script>
+
+
+    <script>
+        $('.partners-logo-carousel').owlCarousel({
+            loop: false,
+            nav: false,
+            // navClass: ['bi bi-chevron-left', 'bi bi-chevron-right'],
+            dots: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
                 }
             }
         })

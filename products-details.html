@@ -223,7 +223,9 @@
                 <p class="sm-txt mb-4 text-white">There are no reviews yet.</p>
 
                 <p class="sm-txt text-white"> Be the first to review “Ship Your Idea”</p>
-                <p class="sm-txt text-white">Your email address will not be published. Required fields are marked * <br>Your rating *</p>
+                <p class="sm-txt text-white">Your email address will not be published. Required fields are marked *
+                    <br>Your rating *
+                </p>
 
                 <div class="star-strip d-flex justify-content-center">
                     <i class="bi bi-star-fill"></i>
@@ -333,17 +335,35 @@
 
     <!-- our partners start -->
 
-    <div class="container" style="margin-top: 100px;">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <div class="partners-main">
+    <div class="partners-main container">
+        <div class="owl-carousel owl-theme partners-logo-carousel">
+
+            <div class="item">
+                <div class="img-box">
                     <img class="img-fluid" src="assets/images/client's-logo-one.svg">
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img-box">
                     <img class="img-fluid" src="assets/images/client's-logo-two.svg">
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img-box">
                     <img class="img-fluid" src="assets/images/client's-logo-three.svg">
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img-box">
                     <img class="img-fluid" src="assets/images/client's-logo-four.svg">
                 </div>
             </div>
+
         </div>
+
     </div>
 
     <!-- our partners end -->
@@ -511,6 +531,26 @@
                 },
                 1000: {
                     items: 3
+                }
+            }
+        })
+    </script>
+
+    <script>
+        $('.partners-logo-carousel').owlCarousel({
+            loop: false,
+            nav: false,
+            // navClass: ['bi bi-chevron-left', 'bi bi-chevron-right'],
+            dots: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
                 }
             }
         })
